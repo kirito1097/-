@@ -1,0 +1,17 @@
+plugins { id 'java' }
+
+repositories {
+    maven { url 'https://jitpack.io' }
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly 'com.github.Anuken.Arc:arc-core:v146'
+    compileOnly 'com.github.Anuken.Mindustry:core:v146'
+}
+
+jar {
+    from configurations.runtimeClasspath.collect {
+        it.isDirectory() ? it : zipTree(it)
+    }
+}

@@ -1,0 +1,10 @@
+plugins { id 'java' }
+
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    compileOnly 'com.github.Anuken.Arc:arc-core:v145'
+    compileOnly 'com.github.Anuken.Mindustry:core:v145'
+}

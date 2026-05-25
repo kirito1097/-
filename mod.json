@@ -1,0 +1,6 @@
+{
+    "name": "botclient",
+    "main": "BotClient",
+    "version": "1.0",
+    "minGameVersion": "158"
+}
